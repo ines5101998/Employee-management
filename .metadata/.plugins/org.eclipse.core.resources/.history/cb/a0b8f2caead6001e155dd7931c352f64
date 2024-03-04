@@ -1,0 +1,5 @@
+package com.microservicestraining.employeeapp.service;
+
+public class EmployeeService {
+
+}

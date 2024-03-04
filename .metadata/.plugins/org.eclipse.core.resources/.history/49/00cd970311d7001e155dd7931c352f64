@@ -1,0 +1,5 @@
+package com.microservicestraining.employeeapp.config;
+
+public class EmployeeAppConfig {
+
+}

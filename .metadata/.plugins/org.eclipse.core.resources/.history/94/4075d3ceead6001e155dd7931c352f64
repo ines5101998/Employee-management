@@ -1,0 +1,5 @@
+package com.microservicestraining.employeeapp.repo;
+
+public class EmployeeRepo {
+
+}

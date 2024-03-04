@@ -1,0 +1,28 @@
+package com.microservicestraining.employeeapp.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.microservicestraining.employeeapp.Entity.Employee;
+import com.microservicestraining.employeeapp.response.EmployeeResponse;
+import com.microservicestraining.employeeapp.service.EmployeeService;
+
+@RestController
+public class EmployeeController {
+	
+	@Autowired
+    EmployeeService employeeService;
+	
+	@GetMapping("/employees/{id}")
+	employeeResponse getEmployeeDetails(@PathVariable("id") int id){
+		
+		//db call -> employee 1
+		EmployeeResponse employeeResponse = employeeService.getEmployeeById(id);
+		
+		return employeeResponse;
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.microservicestraining.employeeapp.response;
+
+public class EmployeeResponse {
+
+}
